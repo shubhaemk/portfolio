@@ -1,0 +1,49 @@
+@keyframes infiniteY{
+    0%{
+        
+        transform: translateY(0);
+    }
+
+    25%{
+        transform: translateY(.15rem);
+    }
+
+    50%{
+        
+        transform: translateY(0);
+    }
+
+    75%{
+        transform: translateY(-.15rem);
+    }
+
+    100%{
+        
+        transform: translateY(0);
+    }
+}
+
+@keyframes infiniteY2{
+    0%{
+        
+        transform: rotate(180deg) translateY(0);
+    }
+
+    25%{
+        transform: rotate(180deg) translateY(.15rem);
+    }
+
+    50%{
+        
+        transform: rotate(180deg) translateY(0);
+    }
+
+    75%{
+        transform: rotate(180deg) translateY(-.15rem);
+    }
+
+    100%{
+        
+        transform: rotate(180deg) translateY(0);
+    }
+}

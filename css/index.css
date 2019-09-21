@@ -1,0 +1,178 @@
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: "Lato", sans-serif;
+    padding : 15px;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff; 
+}
+
+.background-hero {
+    background-color: #222831;
+    height: 100%;
+}
+
+.info{
+    position: absolute;
+    top : 5%;
+    left : 5%;
+}
+
+.info-main{
+    color : #00adb5;
+    text-transform: uppercase;
+}
+
+
+.info-sub-1{
+    color: #eeeeee;
+    display: block;
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    animation: moveInLeft .5s ease-out;
+}
+
+.info-sub-2{
+    display: inline-block;
+    font-size: 58px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin-bottom: 10px;
+    animation: moveInLeft .5s ease-out .60s;
+    animation-fill-mode: backwards; 
+}
+
+.info-sub-3{
+    display: inline-block;
+    color: #eeeeee;
+    font-size: 58px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    margin-bottom: 12px;
+    animation: moveInRight .5s ease-out .75s;
+    animation-fill-mode: backwards; 
+}
+
+.info-sub-4{
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 10px;
+    animation: moveInBottom .5s ease-out 1s;
+    animation-fill-mode: backwards; 
+}
+
+.bio{
+    position: absolute;
+    top : 28%;
+    left : 5%;
+    width : 56%;
+}
+
+.bio-main{
+    color: #eeeeee;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    animation: moveInRight .5s ease-out 1.3s;
+    animation-fill-mode: backwards; 
+}
+
+.about{
+    position: absolute;
+    top : 40%;
+    left : 5%;
+    width : 56%;
+}
+
+.about-main{
+    color : #00adb5;
+    display: block;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+
+.about-sub{
+    margin-top: 15px;
+}
+
+.about-icon{
+    padding-top:5px;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.about-sub-text{
+    color: #eeeeee;
+    font-size: 23px;
+    font-weight: 300;
+    margin-right: 60px; 
+}
+
+.contact{
+    position: absolute;
+    top : 62%;
+    left : 5%;
+    width : 56%;
+}
+
+.contact-main{
+    color: #00adb5;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    animation: moveInBottom .5s ease-out 1.4s;
+    animation-fill-mode: backwards;   
+}
+
+.arrow{
+    padding-top: 5px;
+    height: 25px;
+    width: 25px;
+    animation: moveInRight .5s ease-out 1.6s;
+    animation-fill-mode: backwards;   
+}
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}

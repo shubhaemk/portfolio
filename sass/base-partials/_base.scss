@@ -1,0 +1,54 @@
+:root{
+
+
+    //font-color-dark
+    --text-primary-dark: #364f6b;
+    --text-primary-light: rgb(20, 132, 163);
+
+    --text-secondary-dark: #5b7da5;
+    --text-secondary-light: #2c4057;
+
+    //accent/font-color
+    --accent-primary: #1Ac4f3;
+    --accent-primary-light: rgb(151, 215, 233);
+    
+    --accent-secondary: #eeeeee;
+    --accent-secondary-dark: #e1e1e1;
+
+    --background-color: #fff;
+
+}
+
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    //font-family: 'Nunito', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    scroll-snap-type: y mandatory;
+    height: auto;
+    width: 100%;
+    background-color: var(--background-color);
+}
+
+.page{
+    scroll-snap-align: start;
+    height: 100vh;
+    width: 100vw;
+    padding : 4rem;
+}
