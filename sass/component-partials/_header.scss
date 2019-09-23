@@ -1,6 +1,6 @@
 .header{
     height: 100%;
-    width: 100%;
+    
     display: flex;
     position: relative;
     justify-content: center;
@@ -16,15 +16,15 @@
         position: relative;
 
         //applies to second card
-        &:not(:first-child){
+        &:nth-child(2){
             background-color: var(--accent-secondary);
-            margin-bottom: auto;
+            
             height: max-content;
         }
 
         //applies to first card
-        &:not(:last-child){
-            margin-top: auto;
+        &:nth-child(1){
+            margin-top: 15rem;
             height: max-content;
             margin-right: 4rem;
         }
@@ -161,27 +161,13 @@
     }
 
     &__contact{
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        position: relative;
-
-
         &-info{
-            width: 100%;
-            display: flex;
-            justify-content: space-between; 
-            align-items: center;
-            flex-direction: row-reverse;
-
             margin: 4rem 0;
-
-            &-mail{
-                flex: 0 0 20%;
-
+            &-mail{   
+                margin-top: 3rem;
                 &-link{
+                    margin-left: auto;
+                    width: 10rem;
                     display: flex;
                     justify-content: center;
                     align-items: center;

@@ -14,10 +14,10 @@
         //applies to first card
         &:not(:last-child){
             width: 70%;
-            margin-top: auto;
             height: max-content;
             margin-right: 4rem;
             background-color: var(--accent-secondary);
+            margin-top: 15rem;
         }
         
         //applies to second card
@@ -26,6 +26,7 @@
             background-color: var(--accent-primary);
             margin-bottom: auto;
             height: max-content;
+            margin-top: 5rem;
         }
     }
 
