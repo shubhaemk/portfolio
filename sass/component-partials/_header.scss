@@ -31,14 +31,14 @@
             height: max-content;
             margin-right: 4rem;
 
+            @include respond(tab-land){
+                margin-top: 22rem;
+            }
+
             @include respond(tab-port){
                 margin-top: 10rem;
                 margin-right: 0rem;
                 margin-bottom: 4rem;
-            }
-
-            @include respond(tab-land){
-                margin-top: 22rem;
             }
         }
     }
@@ -50,8 +50,8 @@
             color: var(--text-primary-dark);
 
             @include respond(phone){
-                margin-top: -8.5rem;
-                font-size: 8rem;
+                margin-top: -8rem;
+                font-size: 10rem !important;
             }
 
             @include respond(tab-land){
