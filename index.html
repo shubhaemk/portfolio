@@ -16,9 +16,9 @@
         <link rel='stylesheet' href='./css/style.css'></link>
     </head>
     <body>
-        <div class="page">
-            <header class="header" id="take-to-contact">
-                <div class="header__card" data-aos="fade-down" data-aos-offset="100" data-aos-delay="50" data-aos-duration="500" data-aos-easing="ease" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+        <div id="take-to-contact" class="page">
+            <header class="header" data-aos="fade-down" data-aos-delay="100" data-aos-duration="900" data-aos-easing="ease" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+                <div class="header__card">
                     <div class="header__profile-title">
                         <h2>
                             Hi,
@@ -47,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="header__card" data-aos="fade-down" data-aos-offset="100" data-aos-delay="120" data-aos-duration="500" data-aos-easing="ease" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+                <div class="header__card">
                     <div class="header__technologies">
                         <div class="header__technologies-title">
                             <h1>
@@ -142,9 +142,9 @@
             </header>
         </div>
 
-        <div class="page">
-            <main id="take-to-portfolio" class="portfolio">
-                <div class="portfolio__card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="120" data-aos-duration="500" data-aos-easing="ease" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+        <div id="take-to-portfolio" class="page">
+            <main class="portfolio" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900" data-aos-easing="ease" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+                <div class="portfolio__card">
                     <div class="project">
                         <div class="project__title">
                             <span>
@@ -244,11 +244,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="portfolio__card" data-aos="fade-up" data-aos-offset="100" data-aos-delay="100" data-aos-duration="500" data-aos-easing="ease" data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center">
+                <div class="portfolio__card">
                     <div class="portfolio__about">
                         <span>Besides developing Web Apps,</span>
                         I'm a hobbiest photographer, clicking subjects I find intriguing,
-                        <br>
+                        <br class="portfolio__hide">
                          I leverage my visual skills to create better looking softwares. 
                     </div>
                     <div class="portfolio__nav">
@@ -267,7 +267,7 @@
 
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
-            AOS.init({ duration: 1200 });
+            AOS.init({ duration: 900 });
         </script>
     </body>
 </html>
