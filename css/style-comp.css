@@ -87,21 +87,18 @@ body {
     .header__card:not(:first-child) {
       background-color: var(--accent-secondary);
       margin-bottom: auto;
-      height: 75%; }
+      height: max-content; }
     .header__card:not(:last-child) {
       margin-top: auto;
-      height: 75%;
+      height: max-content;
       margin-right: 4rem; }
       @media screen and (max-width: 1050px) {
         .header__card:not(:last-child) {
           margin-bottom: 4rem;
           margin-right: 0rem; } }
   .header__profile-title {
-    font-size: 10rem;
-    margin-top: -12rem;
-    display: inline-block;
-    width: 100%;
-    height: auto;
+    font-size: 6rem;
+    margin-top: -11rem;
     color: var(--text-primary-dark); }
     @media screen and (min-width: 1232px) {
       .header__profile-title {
@@ -363,8 +360,10 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    position: relative;
-    padding: 0 4rem; }
+    position: relative; }
+    @media screen and (max-width: 620px) {
+      .header__contact {
+        padding: 0 2rem; } }
     .header__contact-info {
       width: 100%;
       display: flex;
@@ -391,7 +390,7 @@ body {
         flex: 0 0 20%; }
         @media screen and (max-width: 620px) {
           .header__contact-info-mail {
-            margin-top: 3rem;
+            margin-top: 3.5rem;
             flex: 0 0 100%; } }
         .header__contact-info-mail-link {
           display: flex;
@@ -430,6 +429,9 @@ body {
           .header__contact-info-social {
             width: 100%;
             margin-right: 0rem; } }
+        @media screen and (max-width: 620px) {
+          .header__contact-info-social-link:not(:last-child) {
+            margin-right: 2rem; } }
         .header__contact-info-social-link:visited {
           text-decoration: none; }
         .header__contact-info-social-link:active, .header__contact-info-social-link:focus {
@@ -551,11 +553,12 @@ body {
     border-radius: 1rem;
     display: inline-block;
     padding: 3rem;
-    position: relative; }
+    position: relative;
+    height: max-content; }
     .portfolio__card:not(:last-child) {
       width: 70%;
       margin-top: auto;
-      height: 85%;
+      height: max-content;
       margin-right: 4rem;
       background-color: var(--accent-secondary); }
       @media screen and (max-width: 1050px) {
