@@ -47,19 +47,6 @@ body{
 }
 
 .page{
-    @media (pointer: fine) {
-        scroll-snap-align: start;
-    }
-    
     width: 100vw;
     padding : 4rem;
-
-    @media screen and (max-width: 1050px){
-        height: auto;
-        padding: 10rem 4rem;
-    }
-
-    @media screen and (max-width: 1045px) {
-        padding: 10rem 2rem;
-    }
 }
