@@ -9,6 +9,7 @@
         flex-direction: column;
     }
 
+
     &__card{
         border-radius: 1rem;  
         display: inline-block;
@@ -35,6 +36,10 @@
                 margin-right: 0rem;
                 margin-bottom: 4rem;
             }
+
+            @include respond(tab-land){
+                margin-top: 22rem;
+            }
         }
     }
 
@@ -45,7 +50,13 @@
             color: var(--text-primary-dark);
 
             @include respond(phone){
-                margin-top: -9rem;
+                margin-top: -8.5rem;
+                font-size: 8rem;
+            }
+
+            @include respond(tab-land){
+                font-size: 8rem;
+                margin-top: -9.5rem;
             }
         }
 
@@ -56,6 +67,9 @@
 
             & > * {
                 margin-bottom: 2rem;
+                @include respond(phone){
+                    margin-bottom: 3rem;
+                }
             }
 
             &-title{
@@ -63,16 +77,35 @@
                 & span{
                     color: var(--accent-secondary);
                 }
+
+                @include respond(phone){
+                    font-size: 4rem;
+                }
+
+                @include respond(tab-land){
+                    font-size: 3.5rem;
+                }
             }
 
             &-detail{
                 font-size: 3rem;
                 color: var(--text-secondary-dark);
+                @include respond(tab-land){
+                    font-size: 2.5rem;
+                }
             }
         }
 
         &-basic{
             margin-top: 4rem;
+            @include respond(phone){
+                margin-top: 0rem;
+            }
+
+            @include respond(tab-land){
+                margin-top: 2rem;
+            }
+
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -95,12 +128,27 @@
                     height: 5rem;
                     width: 5rem;
                     fill: var(--text-primary-dark);
+                    @include respond(phone){
+                        height: 4rem;
+                        width: 4rem;
+                    }
+
+                    @include respond(tab-land){
+                        height: 4rem;
+                        width: 4rem;
+                    }
 
                 }
                 &-text{
                     font-size: 3.65rem;
                     color: var(--text-primary-dark);
                     margin-left: 1rem;
+                    @include respond(phone){
+                        font-size: 3.2rem;
+                    }
+                    @include respond(tab-land){
+                        font-size: 2.8rem;
+                    }
                 }
             }
 
@@ -112,12 +160,26 @@
                     height: 4rem;
                     width: 4rem;
                     fill: var(--text-primary-dark);
+                    @include respond(phone){
+                        height: 4rem;
+                        width: 4rem;
+                    }
+                    @include respond(tab-land){
+                        height: 4rem;
+                        width: 4rem;
+                    }
                 }
 
                 &-text{
                     font-size: 3.65rem;
                     color: var(--text-primary-dark);
                     margin-left: 1.9rem;
+                    @include respond(phone){
+                        font-size: 3.2rem;
+                    }
+                    @include respond(tab-land){
+                        font-size: 2.8rem;
+                    }
                 }
             }
         }
@@ -134,11 +196,24 @@
                 margin-bottom: 3.5rem;
             }
         }
+        @include respond(phone){
+            margin: 3rem 0;
+        }
+
+        @include respond(tab-land){
+            margin: 0;
+        }
 
         &-title{
             font-size: 2.5rem;
             color: var(--text-primary-dark);
             text-align: center;
+            @include respond(phone){
+                font-size: 2rem;
+            }
+            @include respond(tab-land){
+                font-size: 1.8rem;
+            }
         }
 
         &-list{
@@ -256,6 +331,17 @@
         right: .5rem;
         bottom: -5.6rem;
 
+        @include respond(phone){
+            font-size: 7rem;
+            right: 0rem;
+            bottom: -4.5rem;
+        }
+
+        @include respond(tab-land){
+            font-size: 6rem;
+            right: 0rem;
+            bottom: -4.5rem;
+        }
         
         &-link{
             display: flex;
@@ -279,6 +365,16 @@
             width: 12rem;
             fill: var(--text-primary-dark);
             animation: infiniteY .9s infinite;
+
+            @include respond(phone){
+                height: 9rem;
+                width: 9rem;
+            }
+
+            @include respond(tab-land){
+                height: 10rem;
+                width: 10rem;
+            }
         }
     }
 }

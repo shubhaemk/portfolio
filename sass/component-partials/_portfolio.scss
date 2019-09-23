@@ -9,6 +9,10 @@
         flex-direction: column;
     }
 
+    @include respond(tab-land){
+        flex-direction: column;
+    }
+
     &__card{
         border-radius: 1rem;  
         display: inline-block;
@@ -28,6 +32,12 @@
                 margin-right: 0rem;
                 margin-bottom: 3rem;
             }
+
+            @include respond(tab-land){
+                width: 100%;
+                margin-right: 0rem;
+                margin-bottom: 3rem;
+            }
         }
         
         //applies to second card
@@ -41,6 +51,13 @@
             @include respond(tab-port){
                 width: 100%;
                 margin-top: 0rem;
+                margin-bottom: 10rem;
+            }
+
+            @include respond(tab-land){
+                width: 100%;
+                margin-top: 0rem;
+                margin-bottom: 10rem;
             }
         }
     }
@@ -77,6 +94,16 @@
             bottom: -3.5rem;
         }
 
+        @include respond(tab-land){
+            right: 1.5rem;
+            bottom: -5rem;
+        }
+        
+        @include respond(tab-port){
+            right: 1.5rem;
+            bottom: -5rem;
+        }
+
         &-link{
             display: flex;
             justify-content: flex-end;
@@ -104,6 +131,16 @@
                 height: 7rem;
                 width: 7rem;
             }
+
+            @include respond(tab-land){
+                height: 10rem;
+                width: 10rem;
+            }
+
+            @include respond(tab-port){
+                height: 10rem;
+                width: 10rem;
+            }
         }
     }
 }
@@ -123,6 +160,12 @@
         position: absolute;
         top: -8rem;
         left: 1rem;
+
+        @include respond(phone){
+            font-size: 7rem;
+            top: -6rem;
+            left: 1rem;
+        }
     }
 
     &__list{
@@ -134,14 +177,14 @@
 
         &-top{
             width: 100%;
-            height: 60%;
+            height: auto;
             margin-bottom: 3rem;
             display: flex;
             justify-content: center;
 
             @include respond(phone){
                 margin: 0 auto;
-                width: 70%;
+                width: 100%;
                 flex-direction: column;
             }
 
@@ -166,6 +209,10 @@
                     height: auto;
                 }
 
+                @include respond(tab-land){
+                    height: auto;
+                }
+
                 &:hover img{
                     transform: scale(1.03);
                     filter: grayscale(0%);
@@ -181,6 +228,10 @@
                         display: block;
                         margin: 1rem;
                     }
+                    @include respond(tab-land){
+                        display: block;
+                        margin: 1rem;
+                    }
 
                     &-title{
                         padding: 0 1rem;
@@ -188,7 +239,16 @@
                         text-align: left;
                         color: var(--text-primary-dark);
 
+                        @include respond(phone){
+                            font-size: 5rem;
+                        }
+
                         @include respond(tab-port){
+                            padding: 0;
+                            text-align: center;
+                        }
+
+                        @include respond(tab-land){
                             padding: 0;
                             text-align: center;
                         }
@@ -202,6 +262,15 @@
                             display: block;
                             text-align: center;
                         }
+
+                        @include respond(tab-land){
+                            display: block;
+                            text-align: center;
+                        }
+
+                        @include respond(phone){
+                            font-size: 2.5rem;
+                        }
                     }
                 }
 
@@ -214,13 +283,22 @@
                     @include respond(tab-port){
                         height: 4rem;
                     }
+
+                    @include respond(tab-land){
+                        height: 4rem;
+                    }
+
+                    @include respond(phone){
+                        font-size: 2rem;
+                        height: 3rem;
+                    }
                 }
 
                 &-details{
                     width: 100%;
                     display: flex;
                     justify-content: space-around;
-                    padding: 2rem;
+                    padding: 4rem 3rem;
                     
 
                     &-image{
@@ -242,12 +320,17 @@
                         & > a {
                             width: 100%;
                             height: auto;
-                            padding: 0 .5rem;
+                            padding: .5rem;
                             background-color: var(--accent-primary);
                             margin-bottom: 1rem;
                             border-radius: 1rem;
 
-                            font-size: 1.7rem;
+                            font-size: 1.5rem;
+                            @include respond(phone){
+                                padding: 1rem;
+                                font-size: 2rem;
+                            }
+
                             color: var(--accent-secondary);
                             text-align: center;
 
@@ -318,6 +401,15 @@
                     @include respond(tab-port){
                         font-size: 2.5rem;
                     }
+
+                    @include respond(tab-land){
+                        font-size: 2.5rem;
+                    }
+
+                    @include respond(phone){
+                        font-size: 3.5rem;
+                        margin: .5rem 0;
+                    }
                 }
 
                 &-subtitle{
@@ -327,6 +419,11 @@
                     color: var(--text-secondary-dark);
                     text-align: center;
                     margin-bottom: 1rem;
+
+                    @include respond(phone){
+                        font-size: 1.5rem;
+                        margin-bottom: 1.5rem;
+                    }
                 }
 
                 &-list{
@@ -339,6 +436,14 @@
 
                     @include respond(tab-port){
                         font-size: 1.2rem;
+                    }
+
+                    @include respond(tab-land){
+                        font-size: 1.2rem;
+                    }
+
+                    @include respond(phone){
+                        font-size: 2rem;
                     }
                 }
 
@@ -359,6 +464,10 @@
                         font-size: 1.7rem;
 
                         @include respond(tab-port){
+                            font-size: 1.5rem;
+                        }
+
+                        @include respond(tab-land){
                             font-size: 1.5rem;
                         }
                         color: var(--accent-secondary);
