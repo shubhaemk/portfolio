@@ -57,9 +57,31 @@ body {
   width: 100vw;
   padding: 4rem; }
 
+/*
+    0 - 600 Phone
+    600 - 900   Tablet ( Potrait )
+    900 - 1200  Tablet ( Landscape )
+    1200 - 1800 Normal Styles
+    1800 +      Big Desktop
+    $breakpoint argument choices :
+    1.phone
+    2. tab-port
+    3. tab-land
+    4. big-desktop
+    600px : 37.5em
+    900px : 56.5em
+    1200px : 75em
+    1800px : 112.5em 
+    Steps for writing Media Queries
+    1. Base
+    2. Typography
+    3. General Layout + Grid
+    4. Page specific layout
+    5. Components
+    @if is sass directive
+*/
 .header {
   height: 100%;
-  width: 100%;
   display: flex;
   position: relative;
   justify-content: center; }
@@ -70,12 +92,11 @@ body {
     padding: 3rem;
     background-color: var(--accent-primary);
     position: relative; }
-    .header__card:not(:first-child) {
+    .header__card:nth-child(2) {
       background-color: var(--accent-secondary);
-      margin-bottom: auto;
       height: max-content; }
-    .header__card:not(:last-child) {
-      margin-top: auto;
+    .header__card:nth-child(1) {
+      margin-top: 15rem;
       height: max-content;
       margin-right: 4rem; }
   .header__profile-title {
@@ -161,64 +182,54 @@ body {
       height: auto;
       border-bottom: 0.14rem solid var(--text-secondary-dark);
       border-radius: 1rem; }
-  .header__contact {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    position: relative; }
-    .header__contact-info {
+  .header__contact-info {
+    margin: 4rem 0; }
+    .header__contact-info-mail {
+      margin-top: 3rem; }
+      .header__contact-info-mail-link {
+        margin-left: auto;
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--accent-secondary);
+        text-decoration: none;
+        padding: 2rem;
+        border-radius: 1rem;
+        padding: 5px;
+        background-color: var(--accent-primary);
+        transition: background-color ease .4s; }
+        .header__contact-info-mail-link:hover {
+          background-color: var(--text-primary-dark); }
+        .header__contact-info-mail-link:active, .header__contact-info-mail-link:focus {
+          outline: none; }
+      .header__contact-info-mail-icon {
+        height: 2.3rem;
+        width: 2.3rem;
+        fill: var(--accent-secondary);
+        margin-right: 1rem; }
+      .header__contact-info-mail-text {
+        font-size: 1.5rem; }
+        .header__contact-info-mail-text:link, .header__contact-info-mail-text:visited {
+          color: var(--accent-secondary);
+          text-decoration: none; }
+    .header__contact-info-social {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      flex-direction: row-reverse;
-      margin: 4rem 0; }
-      .header__contact-info-mail {
-        flex: 0 0 20%; }
-        .header__contact-info-mail-link {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: var(--accent-secondary);
-          text-decoration: none;
-          padding: 2rem;
-          border-radius: 1rem;
-          padding: 5px;
-          background-color: var(--accent-primary);
-          transition: background-color ease .4s; }
-          .header__contact-info-mail-link:hover {
-            background-color: var(--text-primary-dark); }
-          .header__contact-info-mail-link:active, .header__contact-info-mail-link:focus {
-            outline: none; }
-        .header__contact-info-mail-icon {
-          height: 2.3rem;
-          width: 2.3rem;
-          fill: var(--accent-secondary);
-          margin-right: 1rem; }
-        .header__contact-info-mail-text {
-          font-size: 1.5rem; }
-          .header__contact-info-mail-text:link, .header__contact-info-mail-text:visited {
-            color: var(--accent-secondary);
-            text-decoration: none; }
-      .header__contact-info-social {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center; }
-        .header__contact-info-social-link:visited {
-          text-decoration: none; }
-        .header__contact-info-social-link:active, .header__contact-info-social-link:focus {
-          outline: none; }
-        .header__contact-info-social-icon {
-          fill: var(--text-primary-dark);
-          height: 3rem;
-          width: 3rem;
-          transition: transform ease .2s; }
-          .header__contact-info-social-icon:hover {
-            transform: scale(1.09);
-            fill: var(--text-secondary-light); }
+      align-items: center; }
+      .header__contact-info-social-link:visited {
+        text-decoration: none; }
+      .header__contact-info-social-link:active, .header__contact-info-social-link:focus {
+        outline: none; }
+      .header__contact-info-social-icon {
+        fill: var(--text-primary-dark);
+        height: 3rem;
+        width: 3rem;
+        transition: transform ease .2s; }
+        .header__contact-info-social-icon:hover {
+          transform: scale(1.09);
+          fill: var(--text-secondary-light); }
   .header__nav {
     font-size: 8rem;
     display: inline-block;
@@ -255,15 +266,16 @@ body {
     height: max-content; }
     .portfolio__card:not(:last-child) {
       width: 70%;
-      margin-top: auto;
       height: max-content;
       margin-right: 4rem;
-      background-color: var(--accent-secondary); }
+      background-color: var(--accent-secondary);
+      margin-top: 15rem; }
     .portfolio__card:not(:first-child) {
       width: 30%;
       background-color: var(--accent-primary);
       margin-bottom: auto;
-      height: max-content; }
+      height: max-content;
+      margin-top: 5rem; }
   .portfolio__about {
     width: 100%;
     height: 100%;
