@@ -43,6 +43,10 @@
             font-size: 9rem;
             margin-top: -11rem;
             color: var(--text-primary-dark);
+
+            @include respond(phone){
+                margin-top: -9rem;
+            }
         }
 
         &-info{
