@@ -4,7 +4,10 @@
     display: flex;
     position: relative;
     justify-content: center;
-
+    
+    @include respond(tab-port){
+        flex-direction: column;
+    }
 
     &__card{
         border-radius: 1rem;  
@@ -17,8 +20,7 @@
 
         //applies to second card
         &:nth-child(2){
-            background-color: var(--accent-secondary);
-            
+            background-color: var(--accent-secondary);     
             height: max-content;
         }
 
@@ -27,6 +29,12 @@
             margin-top: 15rem;
             height: max-content;
             margin-right: 4rem;
+
+            @include respond(tab-port){
+                margin-top: 10rem;
+                margin-right: 0rem;
+                margin-bottom: 4rem;
+            }
         }
     }
 
