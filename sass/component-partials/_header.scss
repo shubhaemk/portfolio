@@ -18,12 +18,15 @@
         background-color: var(--accent-primary);
         position: relative;
 
-
         //applies to second card
         &:not(:first-child){
             background-color: var(--accent-secondary);
             margin-bottom: auto;
             height: max-content;
+
+            @media screen and (max-width: 1920px){
+                height: 60%;
+            }
         }
 
         //applies to first card
@@ -31,6 +34,10 @@
             margin-top: auto;
             height: max-content;
             margin-right: 4rem;
+
+            @media screen and (max-width: 1920px){
+                height: 60%;
+            }
 
             @media screen and (max-width: 1050px){
                 margin-bottom: 4rem;
