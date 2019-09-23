@@ -141,6 +141,9 @@
                     margin-right: 3rem;
                 }
 
+                @include respond(tab-port){
+                    height: auto;
+                }
 
                 &:hover img{
                     transform: scale(1.03);
@@ -153,16 +156,31 @@
                     align-items: center;
                     margin: 1rem 2rem;
 
+                    @include respond(tab-port){
+                        display: block;
+                        margin: 1rem;
+                    }
+
                     &-title{
                         padding: 0 1rem;
                         font-size: 3rem;
                         text-align: left;
                         color: var(--text-primary-dark);
+
+                        @include respond(tab-port){
+                            padding: 0;
+                            text-align: center;
+                        }
                     }
 
                     &-subtitle{
                         font-size: 1.8rem;
                         color: var(--text-primary-dark);
+
+                        @include respond(tab-port){
+                            display: block;
+                            text-align: center;
+                        }
                     }
                 }
 
@@ -171,6 +189,10 @@
                     font-size: 1.8rem;
                     text-align: center;
                     color: var(--text-secondary-dark);
+
+                    @include respond(tab-port){
+                        height: 4rem;
+                    }
                 }
 
                 &-details{
@@ -178,6 +200,7 @@
                     display: flex;
                     justify-content: space-around;
                     padding: 2rem;
+                    
 
                     &-image{
                         display: inline-block;
@@ -198,9 +221,9 @@
                         & > a {
                             width: 100%;
                             height: auto;
-                            padding: .5rem;
+                            padding: 0 .5rem;
                             background-color: var(--accent-primary);
-                            margin: 1rem;
+                            margin-bottom: 1rem;
                             border-radius: 1rem;
 
                             font-size: 1.7rem;
@@ -256,6 +279,10 @@
                     color: var(--text-primary-dark);
                     text-align: center;
                     margin: 1rem 0;
+
+                    @include respond(tab-port){
+                        font-size: 2.5rem;
+                    }
                 }
 
                 &-subtitle{
@@ -274,6 +301,10 @@
                     color: var(--text-primary-dark);
                     text-align: center;
                     margin-bottom: 1rem;
+
+                    @include respond(tab-port){
+                        font-size: 1.2rem;
+                    }
                 }
 
                 &-info{
@@ -291,6 +322,10 @@
                         border-radius: 1rem;
 
                         font-size: 1.7rem;
+
+                        @include respond(tab-port){
+                            font-size: 1.5rem;
+                        }
                         color: var(--accent-secondary);
                         text-align: center;
 
