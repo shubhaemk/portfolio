@@ -14,12 +14,12 @@
         display: inline-block;
         padding: 3rem;
         position: relative;
-
+        height: max-content;
         //applies to first card
         &:not(:last-child){
             width: 70%;
             margin-top: auto;
-            height: 85%;
+            height: max-content;
             margin-right: 4rem;
             background-color: var(--accent-secondary);
 

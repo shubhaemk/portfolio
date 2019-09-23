@@ -23,13 +23,13 @@
         &:not(:first-child){
             background-color: var(--accent-secondary);
             margin-bottom: auto;
-            height: 75%;
+            height: max-content;
         }
 
         //applies to first card
         &:not(:last-child){
             margin-top: auto;
-            height: 75%;
+            height: max-content;
             margin-right: 4rem;
 
             @media screen and (max-width: 1050px){
@@ -41,12 +41,8 @@
 
     &__profile{
         &-title{
-            font-size: 10rem;
-            margin-top: -12rem;
-            display: inline-block;
-            width: 100%;
-            height: auto;
-
+            font-size: 6rem;
+            margin-top: -11rem;
 
             color: var(--text-primary-dark);
             @media screen and (min-width: 1232px) {
@@ -404,7 +400,6 @@
         justify-content: center;
         flex-direction: column;
         position: relative;
-        padding: 0 4rem;
 
         @media screen and (max-width: 620px){
             padding: 0 2rem;
