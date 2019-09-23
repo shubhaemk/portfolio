@@ -23,9 +23,6 @@
             margin-right: 4rem;
             background-color: var(--accent-secondary);
 
-            @media screen and (max-width: 1920px){
-                height: 70%;
-            }
 
             @media screen and (max-width: 1050px){
                 width: 100%;
@@ -41,9 +38,6 @@
             margin-bottom: auto;
             height: max-content;
             
-            @media screen and (max-width: 1920px){
-                height: 60%;
-            }
 
             @media screen and (max-width: 1050px){
                 width: 100%;

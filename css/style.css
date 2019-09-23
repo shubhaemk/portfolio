@@ -54,7 +54,6 @@ body {
   background-color: var(--background-color); }
 
 .page {
-  height: 100vh;
   width: 100vw;
   padding: 4rem; }
   @media (pointer: fine) {
@@ -88,16 +87,10 @@ body {
       background-color: var(--accent-secondary);
       margin-bottom: auto;
       height: max-content; }
-      @media screen and (max-width: 1920px) {
-        .header__card:not(:first-child) {
-          height: 60%; } }
     .header__card:not(:last-child) {
       margin-top: auto;
       height: max-content;
       margin-right: 4rem; }
-      @media screen and (max-width: 1920px) {
-        .header__card:not(:last-child) {
-          height: 60%; } }
       @media screen and (max-width: 1050px) {
         .header__card:not(:last-child) {
           margin-bottom: 4rem;
@@ -565,9 +558,6 @@ body {
       height: max-content;
       margin-right: 4rem;
       background-color: var(--accent-secondary); }
-      @media screen and (max-width: 1920px) {
-        .portfolio__card:not(:last-child) {
-          height: 70%; } }
       @media screen and (max-width: 1050px) {
         .portfolio__card:not(:last-child) {
           width: 100%;
@@ -578,9 +568,6 @@ body {
       background-color: var(--accent-primary);
       margin-bottom: auto;
       height: max-content; }
-      @media screen and (max-width: 1920px) {
-        .portfolio__card:not(:first-child) {
-          height: 60%; } }
       @media screen and (max-width: 1050px) {
         .portfolio__card:not(:first-child) {
           width: 100%;
