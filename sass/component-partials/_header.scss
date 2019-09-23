@@ -406,6 +406,10 @@
         position: relative;
         padding: 0 4rem;
 
+        @media screen and (max-width: 620px){
+            padding: 0 2rem;
+        }
+
         &-info{
             width: 100%;
             display: flex;
@@ -438,7 +442,7 @@
             &-mail{
                 flex: 0 0 20%;
                 @media screen and (max-width: 620px) {
-                    margin-top: 3rem;
+                    margin-top: 3.5rem;
                     flex: 0 0 100%;
                 }
                 &-link{
@@ -496,6 +500,11 @@
                     margin-right: 0rem;
                 }
                 &-link{
+                    @media screen and (max-width: 620px){
+                        &:not(:last-child){
+                            margin-right: 2rem;
+                        }
+                    }   
                     &:visited{
                         text-decoration: none;
                     }
